@@ -51,7 +51,7 @@ def cprint(text, fill=" ", wrap=None, speed=-1, end="\n"):
         tleft = left_margin*fill
         tright = right_margin*fill
 
-        sprint(tleft, spd=-1)
+        print(tleft, end="")
         sprint(part, spd=speed)
         print(end=end)
 
@@ -89,13 +89,26 @@ def cinput(text, margin=7):
     return input(text)
 
 
-def wtf_effect(seconds):
-
-    for i in range(100):
+def hack_effect(seconds=3, speed=1, set_=string.ascii_letters,
+                length=get_terminal_size().columns, align="left",
+                fill=" "):
+    #even loops is output amount of rows(some magick calculations that I dont understand)
+    loops = 20*seconds*speed
+    delay = seconds/loops
+    
+    for i in range(int(loops)):
 
         text = ""
-        for j in range(get_terminal_size().columns):
+    
+        for j in range(length):
 
-            text += choice(string.ascii_letters)
-        print(text)
-        sleep(seconds/100)
+            text += choice(set_)
+        
+        if align == "left":
+            print(text)
+        elif align == "right":
+            pass
+        else: #center
+            cprint(text, wrap=length, fill=fill)
+
+        sleep(delay)

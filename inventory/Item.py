@@ -1,8 +1,9 @@
 
+# will be worked soon
 
 
 
-class Item(StatManagerClass):
+class Item():
 
 
     def __init__(self):
@@ -10,7 +11,7 @@ class Item(StatManagerClass):
         super().__init__()
 
 
-        self._exists = True
+        #self._exists = True
 
         
         self.callback = None
