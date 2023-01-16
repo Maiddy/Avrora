@@ -15,21 +15,9 @@ class StatManager():
             setattr(self, name, value)
 
 
-        #def getStats(self):
-
-            #return getattr()
-
-
         def hasStat(self, name):
 
             return True if name in dir(self) else False
-
-
-        #def delStat(self, name):
-
-            #if name in self._stats:
-             #   return self._stats.pop(name)
-            #return False
 
 
         def addTag(self, tag):
