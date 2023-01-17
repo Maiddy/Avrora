@@ -1,6 +1,18 @@
-from os import get_terminal_size
+from os import get_terminal_size, system
+from platform import system as os_name
 
 
+
+
+def clear():
+
+    name = os_name().lower()
+    if "linux" in name:
+        system("clear")
+    elif "windows" in name:
+        system("cls")
+    else:
+        print("\n" * Theight())
 
 
 def Twidth():
@@ -13,14 +25,13 @@ def Theight():
     return get_terminal_size().lines
 
 
-#converts to multiplier
 def to_mult(n):
 
     type_ = type(n)
     
     if type_ is str:
         if n.endswith("%"):
-            return int(Twidth() * (int(n[:-1]) / 100))
+            return int(n[:-1]) / 100
         raise ValueError("Percentage must ends with '%' char.")
 
     return n

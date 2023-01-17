@@ -1,14 +1,19 @@
-from Avrora.ui.prints import cprint
-from Avrora.utils import Twidth
-from random import choice
+from Avrora.ui.prints import mprint
+from Avrora.utils import Twidth, Theight, clear, to_mult
+from random import choice, randint
+from time import sleep
+import string
 
 
 
 
 def hack(seconds=3, speed=1, set_=string.ascii_letters,
-            length=Twidth(), align="left",
+            wrap=Twidth(), hmargin=0,
             fill=" "):
     # loops = rows to print
+    if type(wrap) is str:
+        wrap = int(Twidth() * to_mult(wrap))
+
     loops = 20*seconds*speed
     delay = seconds/loops
     
@@ -16,25 +21,29 @@ def hack(seconds=3, speed=1, set_=string.ascii_letters,
 
         text = ""
     
-        for j in range(length):
+        for j in range(wrap):
 
             text += choice(set_)
         
-        if align == "left":
-            print(text)
-        elif align == "right":
-            pass
-        else: # center as default
-            cprint(text, wrap=length, fill=fill)
+        mprint(text, wrap=wrap, fill=fill, hmargin=hmargin)
 
         sleep(delay)
 
 
-def matrix():
+def noise(seconds=3, speed=1, char="~", chance=20):
 
-    pass
+    loops = Theight()*seconds*speed
 
+    screens = int(loops / Theight())
+    delay = seconds / screens
 
-def noise():
-
-    pass
+    for x in range(screens):
+        for i in range(int(loops)):
+            line = ""
+            for j in range(Twidth()):
+                num = randint(0, 100)
+                line += " " if num >= chance else char
+            print(line)        
+        sleep(delay)
+        clear()
+    clear()
