@@ -26,9 +26,8 @@ def Theight():
 
 
 def to_mult(n):
-
+    # :|
     type_ = type(n)
-    
     if type_ is str:
         if n.endswith("%"):
             return int(n[:-1]) / 100

@@ -17,7 +17,7 @@ class StatManager():
 
         def hasStat(self, name):
 
-            return True if name in dir(self) else False
+            return hasattr(self, name)
 
 
         def addTag(self, tag):
