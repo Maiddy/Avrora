@@ -9,6 +9,6 @@ here will be many features to manage most stuff.
 **Yes, it is**
 
 For most text-based games you need only nice print and easy way to
-manipulate with game's objects(I think so), but do not forget about cool story.
+manipulate with game's objects(I think so).
 So, it is provides it to you.
 See [documentation](documentation.md) ~~and make sure it is slag~~.
