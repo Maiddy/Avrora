@@ -1,9 +1,19 @@
-
-# will be worked soon
-
+from avrora.statmanager import StatManager
 
 
-class Item():
+
+
+class Inventory():
+
+
+    def __init__(self):
+
+        pass
+
+
+
+
+class Item(StatManager):
 
 
     def __init__(self):
@@ -17,7 +27,7 @@ class Item():
         self.callback = None
 
 
-    def use(self, usager):
+    def use(self, usager=None):
 
         if self.callback is not None:
             self.callback(self, usager)
@@ -40,7 +50,7 @@ class Item():
 
             setattr(instance, attr, value)
 
-        return instance._copy()
+        return instance.copy()
 
 
     def copy(self):

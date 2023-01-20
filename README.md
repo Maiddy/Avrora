@@ -1,10 +1,14 @@
-## STATUS ON 17 of January, 2023: ACTIVE DEVELOPING
+# That is Avrora engine ~~yeeeeee~~.
 
+This engine provides to you on 01.20.23 only UI and some other features.
+But in future(I think by the beginning of March of 2023)
+here will be many features to manage most stuff.
 
+## Is it usable?
 
-### This engine still in Alpha version, so it is unusable
+**Yes, it is**
 
-I do my best to make it usable as soon as possible
-
-Do not be mad at my code and the engine itself, I'm a noob.
-I make the engine this way, because I think it is easy and convenient in use.
+For most text-based games you need only nice print and easy way to
+manipulate with game's objects(I think so), but do not forget about cool story.
+So, it is provides it to you.
+See [documentation](documentation.md) ~~and make sure it is slag~~.

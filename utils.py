@@ -5,7 +5,7 @@ from platform import system as os_name
 
 
 def clear():
-
+    # TODO: support for MacOS
     name = os_name().lower()
     if "linux" in name:
         system("clear")

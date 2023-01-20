@@ -2,7 +2,7 @@ from Avrora.statmanager import StatManager
 
 
 
-# dummy class for the location manager
+
 class Character(StatManager):
 
 

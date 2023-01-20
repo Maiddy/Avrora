@@ -4,6 +4,22 @@ from copy import deepcopy
 
 
 
+class Location(StatManager):
+
+
+    def __init__(self):
+
+        super().__init__()
+
+
+    @staticmethod
+    def FromFileById(id_):
+
+        pass
+
+
+
+
 class LocationManager(StatManager):
 
 
