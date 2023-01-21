@@ -1,4 +1,4 @@
-from Avrora.statmanager import StatManager
+from avrora.statmanager import StatManager
 
 
 

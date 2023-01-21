@@ -1,5 +1,5 @@
-from Avrora.ui.prints import mprint
-from Avrora.utils import Twidth, Theight, clear, to_mult
+from avrora.ui.prints import mprint
+from avrora.utils import Twidth, Theight, clear, to_mult
 from random import choice, randint
 from time import sleep
 import string

@@ -1,3 +1,4 @@
+from types import FunctionType, MethodType
 
 
 
@@ -12,7 +13,10 @@ class StatManager():
 
         def addStat(self, name=None, value=None):
 
-            setattr(self, name, value)
+            if type(value) is FunctionType:
+                setattr(self, name, MethodType(value, self))
+            else:
+                setattr(self, name, value)
 
 
         def hasStat(self, name):

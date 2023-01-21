@@ -15,7 +15,7 @@ class Location(StatManager):
     @staticmethod
     def FromFileById(id_):
 
-        pass
+        return
 
 
 

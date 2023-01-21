@@ -1,6 +1,6 @@
 from time import sleep
 import sys
-from Avrora.utils import Twidth, Theight, to_mult
+from avrora.utils import Twidth, Theight, to_mult
 
 
 
@@ -37,6 +37,8 @@ def mprint(text, vmargin=0, hmargin=0, fill=" ", wrap=None, speed=-1, char="",  
 
     text_ln = len(text)
 
+    if wrap > text_ln:
+        wrap = text_ln
     #if char:
         #for x in range(wrap-1, len(text), wrap):
             #if
