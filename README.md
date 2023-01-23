@@ -1,14 +1,10 @@
-# That is Avrora engine ~~yeeeeee~~.
+##DEVELOPING IS STOPPED BECAUSE OF
+this engine is bad and I make another stuff
+im busy sorry :)
 
-This engine provides to you on 01.20.23 only UI and some other features.
-But in future(I think by the beginning of March of 2023)
-here will be many features to manage most stuff.
+#FUTURE OF THIS ENGINE
+I will make a normal engine soon,
+but not like this shit
 
-## Is it usable?
-
-**Yes, it is**
-
-For most text-based games you need only nice print and easy way to
-manipulate with game's objects(I think so).
-So, it is provides it to you.
-See [documentation](documentation.md) ~~and make sure it is slag~~.
+keep your wishes and do not forget to work on yourself
+work on yourself and u can do anything u want
